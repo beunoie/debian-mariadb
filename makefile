@@ -6,7 +6,7 @@ CONTAINER=debian-mariadb
 
 CONTNAME=$(CONTAINER)-1
 
-DATAVOLUME=/Users/20000652/Docker/$(CONTAINER)/vol
+DATAVOLUME=$(pwd)/vol
 
 #net=host: mandatory for others containers to connect to mysql
 STARTOPT=-d \
